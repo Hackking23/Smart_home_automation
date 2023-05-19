@@ -231,15 +231,15 @@ void onLedTubeChange()  {
   // Add your code here to act upon led_tube change
   if (led_tube == 1)
   {
-    digitalWrite(RelayPin2, HIGH);
+    digitalWrite(RelayPin2, LOW);
     Serial.println("led_tube ON");
-    toggleState_2 = 0;
+    toggleState_2 = 1;
   }
   else
   {
-    digitalWrite(RelayPin2, LOW);
+    digitalWrite(RelayPin2, HIGH);
     Serial.println("led_tube OFF");
-    toggleState_2 = 1;
+    toggleState_2 = 0;
   }
 }
 
@@ -251,15 +251,15 @@ void onFanChange()  {
   // Add your code here to act upon fan change
   if (fan == 1)
   {
-    digitalWrite(RelayPin3, HIGH);
+    digitalWrite(RelayPin3, LOW);
     Serial.println("fan ON");
-    toggleState_3 = 0;
+    toggleState_3 = 1;
   }
   else
   {
-    digitalWrite(RelayPin3, LOW);
+    digitalWrite(RelayPin3, HIGH);
     Serial.println("fan OFF");
-    toggleState_3 = 1;
+    toggleState_3 = 0;
   }
 }
 
@@ -271,15 +271,15 @@ void onBulbChange()  {
   // Add your code here to act upon bulb change
   if (bulb == 1)
   {
-    digitalWrite(RelayPin4, HIGH);
+    digitalWrite(RelayPin4, LOW);
     Serial.println("bulb ON");
-    toggleState_4 = 0;
+    toggleState_4 = 1;
   }
   else
   {
-    digitalWrite(RelayPin4, LOW);
+    digitalWrite(RelayPin4, HIGH);
     Serial.println("bulb OFF");
-    toggleState_4 = 1;
+    toggleState_4 = 0;
   }
 }
 
@@ -293,14 +293,14 @@ void onTubelightChange()  {
   // Add your code here to act upon Tubelight change
   if (tubelight == 1)
   {
-    digitalWrite(RelayPin1, HIGH);
+    digitalWrite(RelayPin1, LOW);
     Serial.println("tubelight ON");
-    toggleState_1 = 0;
+    toggleState_1 = 1;
   }
   else
   {
-    digitalWrite(RelayPin1, LOW);
+    digitalWrite(RelayPin1, HIGH);
     Serial.println("tubelight OFF");
-    toggleState_1 = 1;
+    toggleState_1 = 0;
   }
 }
